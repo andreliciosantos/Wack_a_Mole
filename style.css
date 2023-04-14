@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+}
+
+main{
+    width: 1440px;
+    height: 1024px;
+    text-align: center;
+    background-image: url("assets/background.svg");
+
+    position: absolute;
+}
+
+.moles {
+
+    margin: 200px auto 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-items: center;
+    row-gap: 50px;
+    width: 1050px;
+}
+
+.mole,
+.hole
+{
+    width: 240px;
+    height: 200px;
+    background-image: url(assets/mole6.svg);
+    background-repeat: no-repeat;
+}
+
+.mole:hover {
+    animation: animatedMole 700ms 200ms backwards;
+}
+
+.mole:active {
+    animation: hitMole 700ms 200ms backwards;
+}
+
+@keyframes animatedMole {
+    0% {
+        background-image: url(assets/mole1.svg);
+    }
+    20% {
+        background-image: url(assets/mole2.svg);
+    }
+    40% {
+        background-image: url(assets/mole3.svg);
+    }
+    60% {
+        background-image: url(assets/mole4.svg);
+    }
+    80% {
+        background-image: url(assets/mole5.svg);
+    }
+    100% {
+        background-image: url(assets/mole6.svg);
+    }
+    
+}
+
+@keyframes hitMole {
+    0% {
+        background-image: url(assets/hitMole.svg);
+    }
+    20% {
+        background-image: url(assets/hurtMole1.svg);
+    }
+    40% {
+        background-image: url(assets/hurtMole1.svg);
+    }
+    60% {
+        background-image: url(assets/hurtMole2.svg);
+    }
+    80%{
+        background-image: url(assets/hurtMole2.svg);
+    }
+    100% {
+        background-image: url(assets/hurtMole3.svg);
+
+    }
+}
