@@ -1,4 +1,4 @@
-# SPA Universe
+# Wack a Mole
 
 ![preview](./.github/preview.png)
 
